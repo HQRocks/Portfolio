@@ -1,0 +1,358 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+  <defs>
+    <!-- Circular badge clip path -->
+    <clipPath id="badge-clip">
+      <circle cx="500" cy="500" r="472" />
+    </clipPath>
+    <!-- Mountain range silhouette clip path for pine tree shadows -->
+    <clipPath id="mountain-range-clip">
+      <polygon points="205,625 358,436 413,492 495,356 578,488 625,436 748,620 748,665 205,665" />
+    </clipPath>
+    <!-- River water clip path for subtle flow highlights -->
+    <clipPath id="river-water-clip">
+      <path d="M 514 606 C 494 618 472 634 452 652 C 422 676 426 692 456 710 C 494 734 514 764 456 814 C 386 876 392 932 448 982 L 642 982 C 524 942 466 892 514 834 C 564 774 554 738 498 706 C 464 686 466 668 492 644 C 504 632 514 618 518 606 Z" />
+    </clipPath>
+  </defs>
+  <!-- Main Clipped Badge Artwork -->
+  <g clip-path="url(#badge-clip)">
+    <!-- 1. Sky Background -->
+    <rect x="0" y="0" width="1000" height="1000" fill="#faf9f5" />
+    <!-- 2. Sun & Rays -->
+    <g id="sun">
+      <circle cx="338" cy="258" r="102" fill="#f89b14" />
+      <g stroke="#f89b14" stroke-width="13" stroke-linecap="round">
+        <line x1="168" y1="258" x2="212" y2="258" />
+        <line x1="191" y1="173" x2="229" y2="195" />
+        <line x1="253" y1="111" x2="275" y2="149" />
+        <line x1="338" y1="88" x2="338" y2="132" />
+        <line x1="423" y1="111" x2="401" y2="149" />
+        <line x1="485" y1="173" x2="447" y2="195" />
+        <line x1="508" y1="258" x2="464" y2="258" />
+      </g>
+    </g>
+    <!-- 3. Airplane, Seagull & Jumping Dolphin -->
+    <g id="sky-wildlife">
+      <!-- Airplane -->
+      <g transform="translate(596, 142) rotate(-27)" fill="#10385b">
+        <path d="M -64 -7 L -22 -11 L 58 -9 C 72 -7 72 7 58 9 L -22 11 L -64 7 Z" />
+        <path d="M 16 -8 L -18 -52 L -36 -49 L -12 -8 Z" />
+        <path d="M 16 8 L -18 52 L -36 49 L -12 8 Z" />
+        <path d="M -44 -6 L -64 -24 L -75 -22 L -60 -6 Z" />
+        <path d="M -44 6 L -64 24 L -75 22 L -60 6 Z" />
+      </g>
+      <!-- Seagull -->
+      <path d="M 668 164 C 686 150 706 154 720 170 C 734 148 756 144 778 148 C 760 155 744 162 734 176 C 740 178 746 179 752 179 C 738 188 716 190 698 182 C 703 180 708 178 712 176 C 698 164 684 162 668 164 Z" fill="#bcc2c6" />
+      <!-- Jumping Dolphin -->
+      <path d="M 852 299 C 853 305 844 307 832 303 C 822 298 812 294 804 293 C 794 301 778 304 767 301 C 771 294 777 288 782 284 C 756 279 722 286 694 323 C 702 332 706 341 701 348 C 694 342 688 335 683 330 C 674 327 664 326 655 327 C 658 317 668 310 682 310 C 702 272 726 250 749 242 C 747 234 743 227 739 223 C 754 221 769 228 779 240 C 811 245 835 262 843 288 C 849 292 852 295 852 299 Z" fill="#10385b" />
+    </g>
+    <!-- 4. Sandy Beach & Ocean Waves -->
+    <g id="ocean-and-beach">
+      <!-- Sandy Beach Base -->
+      <path d="M 20 400 L 980 400 L 980 650 L 20 650 Z" fill="#f3d9ad" />
+      <!-- White Shoreline Foam Border -->
+      <path d="M 20 422 C 95 415 190 418 196 442 C 202 465 132 468 132 485 C 132 502 220 505 265 495 L 675 485 C 715 492 745 482 742 462 C 739 444 768 435 815 442 C 865 450 925 435 980 422 L 980 390 L 20 390 Z" fill="#ffffff" />
+      <!-- Top White Halo Separating Wave Crests from Sky & Sun -->
+      <path d="M 25 352 C 95 366 140 282 216 301 C 185 316 184 352 228 355 C 282 358 320 278 377 302 C 344 318 338 350 375 353 C 425 356 456 282 504 300 C 474 316 474 352 514 354 C 562 356 594 282 646 299 C 616 315 616 352 658 354 C 708 356 742 298 794 318 C 765 332 766 358 804 360 C 848 362 874 316 908 328 C 888 340 890 360 926 361 C 950 362 968 356 980 352" fill="none" stroke="#faf9f5" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" />
+      <!-- Deep Blue Ocean Body -->
+      <path d="M 20 352 C 95 366 140 282 216 301 C 185 316 184 352 228 355 C 282 358 320 278 377 302 C 344 318 338 350 375 353 C 425 356 456 282 504 300 C 474 316 474 352 514 354 C 562 356 594 282 646 299 C 616 315 616 352 658 354 C 708 356 742 298 794 318 C 765 332 766 358 804 360 C 848 362 874 316 908 328 C 888 340 890 360 926 361 C 950 362 968 356 980 352 L 980 410 C 920 422 862 435 812 426 C 758 416 724 430 726 452 C 728 470 698 475 660 468 L 265 478 C 215 486 152 482 152 470 C 152 456 215 452 210 432 C 204 408 100 404 20 410 Z" fill="#0d5c91" />
+      <!-- White Wave Highlights -->
+      <path d="M 244 396 C 268 390 284 378 295 367 C 306 385 354 398 420 384 C 378 404 322 406 294 388 C 278 396 260 398 244 396 Z" fill="#ffffff" />
+      <path d="M 556 394 C 574 388 586 378 595 368 C 600 378 606 386 614 390 C 602 392 595 388 591 384 C 580 391 568 394 556 394 Z" fill="#ffffff" />
+      <path d="M 716 406 C 740 400 756 388 768 377 C 782 392 818 400 856 392 C 824 408 784 408 766 394 C 750 403 732 406 716 406 Z" fill="#ffffff" />
+    </g>
+    <!-- 5. Three-Peak Mountain Range -->
+    <g id="mountains">
+      <!-- Left Mountain -->
+      <polygon points="205,625 358,436 352,472 363,504 349,545 360,595 355,655 205,655" fill="#7a8187" />
+      <polygon points="268,547 352,472 332,518 349,545 292,598" fill="#686f75" />
+      <polygon points="358,436 445,532 365,655 355,655 360,595 349,545 363,504 352,472" fill="#13385a" />
+      <polygon points="363,504 418,502 435,521 382,542" fill="#4d565e" />
+      <!-- Left Snow Cap -->
+      <polygon points="358,436 298,510 316,516 331,499 342,522 354,501 363,504 352,472" fill="#ffffff" />
+      <polygon points="358,436 352,472 363,504 374,515 388,498 402,508 414,497" fill="#cdd5dc" />
+      <!-- Left Peak Navy Ridge Outline -->
+      <polyline points="205,625 358,436 415,499" fill="none" stroke="#10385b" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+      <polyline points="358,436 352,472 363,504 353,534" fill="none" stroke="#10385b" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
+
+      <!-- Right Mountain -->
+      <polygon points="548,522 625,436 618,474 631,506 616,548 627,598 618,655 548,655" fill="#7a8187" />
+      <polygon points="574,493 618,474 598,516 616,548 564,556" fill="#5e666e" />
+      <polygon points="625,436 748,620 618,655 627,598 616,548 631,506 618,474" fill="#13385a" />
+      <polygon points="631,506 686,527 704,554 646,552" fill="#394d63" />
+      <!-- Right Snow Cap -->
+      <polygon points="625,436 576,491 593,500 607,488 618,511 631,506 618,474" fill="#ffffff" />
+      <polygon points="625,436 618,474 631,506 645,494 661,512 675,501 686,518 692,536" fill="#cdd5dc" />
+      <!-- Right Peak Navy Ridge Outline -->
+      <polyline points="576,491 625,436 748,620" fill="none" stroke="#10385b" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+      <polyline points="625,436 618,474 631,506 620,538" fill="none" stroke="#10385b" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
+
+      <!-- Center (Tallest) Mountain -->
+      <polygon points="305,655 495,356 486,405 502,448 484,496 498,545 488,605 495,655" fill="#82898f" />
+      <polygon points="388,524 486,405 452,474 484,496 420,572 355,585" fill="#6b737a" />
+      <polygon points="495,356 682,655 495,655 488,605 498,545 484,496 502,448 486,405" fill="#13385a" />
+      <polygon points="502,448 564,465 595,514 536,518 498,545 484,496" fill="#4a5560" />
+      <polygon points="536,518 614,548 634,580 558,576" fill="#364656" />
+      <!-- Center Snow Cap -->
+      <polygon points="495,356 416,480 436,488 453,466 467,498 484,475 502,448 486,405" fill="#ffffff" />
+      <polygon points="436,488 412,526 424,522 446,484" fill="#ffffff" />
+      <polygon points="495,356 486,405 502,448 484,475 496,496 515,472 533,494 548,476 568,492 574,480" fill="#cdd5dc" />
+      <!-- Center Peak Navy Ridge Outline -->
+      <polyline points="354,578 495,356 634,575" fill="none" stroke="#10385b" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+      <polyline points="495,356 486,405 502,448 484,496 495,532" fill="none" stroke="#10385b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+
+      <!-- Dark Navy Pine Tree Shadows & Mountain Base (Clipped cleanly to mountain slopes) -->
+      <g clip-path="url(#mountain-range-clip)">
+        <path d="M 195 628
+                 L 216 588 L 210 588 L 224 562 L 218 562 L 230 538 L 242 562 L 236 562 L 248 588 L 242 588 L 254 608
+                 L 272 584 L 266 584 L 280 558 L 274 558 L 288 532 L 302 558 L 296 558 L 310 584 L 304 584 L 316 602
+                 L 328 574 L 322 574 L 336 544 L 330 544 L 343 516 L 356 544 L 350 544 L 364 574 L 358 574 L 370 598
+                 L 382 576 L 376 576 L 390 548 L 384 548 L 396 524 L 408 548 L 402 548 L 416 576 L 410 576 L 424 606
+                 L 442 582 L 436 582 L 448 556 L 442 556 L 455 532 L 468 556 L 462 556 L 474 582 L 468 582 L 480 602
+                 L 494 572 L 488 572 L 502 544 L 496 544 L 510 516 L 524 544 L 518 544 L 532 572 L 526 572 L 538 598
+                 L 550 578 L 544 578 L 558 554 L 552 554 L 564 532 L 576 554 L 570 554 L 584 578 L 578 578 L 594 608
+                 L 614 586 L 608 586 L 622 562 L 616 562 L 628 540 L 640 562 L 634 562 L 648 586 L 642 586 L 664 602
+                 L 688 568 L 682 568 L 698 540 L 692 540 L 708 514 L 724 540 L 718 540 L 734 568 L 728 568 L 752 622
+                 L 752 665 L 195 665 Z" fill="#13385a" />
+      </g>
+    </g>
+    <!-- 6. Layered Foothills, Valley Depth & Pine Forest -->
+    <g id="hills-and-trees">
+      <!-- Distant Blue-Green Foothill Ridge (Creates atmospheric depth at mountain base & frames valley pass) -->
+      <path d="M 145 588 C 235 568 345 574 445 596 C 482 604 504 608 522 606 C 556 594 635 574 755 582 L 775 655 L 145 655 Z" fill="#2b755c" />
+      <!-- Secondary Forested Foothill Ridge & Valley Pass -->
+      <path d="M 95 574 C 215 580 345 596 462 618 C 486 622 504 614 522 606 C 585 594 695 582 855 578 L 855 675 L 95 675 Z" fill="#3c8747" />
+
+      <!-- Distant Dark Pine Trees along the Upper Foothills & Valley Pass -->
+      <polygon points="136,506 160,553 150,553 170,587 158,587 178,618 94,618 114,587 102,587 122,553 112,553" fill="#12783e" />
+      <polygon points="248,546 266,580 259,580 274,605 265,605 280,628 216,628 231,605 222,605 237,580 230,580" fill="#12783e" />
+      <polygon points="354,538 372,573 365,573 380,599 371,599 386,624 322,624 337,599 328,599 343,573 336,573" fill="#12783e" />
+      <polygon points="462,552 478,582 472,582 485,604 477,604 490,625 434,625 447,604 439,604 452,582 446,582" fill="#12783e" />
+      <polygon points="562,546 578,577 572,577 585,600 577,600 590,622 534,622 547,600 539,600 552,577 546,577" fill="#12783e" />
+      <polygon points="658,542 676,576 669,576 684,601 675,601 690,624 626,624 641,601 632,601 647,576 640,576" fill="#12783e" />
+
+      <!-- Mid-Slope Rolling Hill Terraces (Adds smooth contour & valley flow before main hills) -->
+      <path d="M 15 562 C 155 582 315 608 478 632 C 446 654 416 676 446 704 L 15 740 Z" fill="#54973e" />
+      <path d="M 985 572 C 855 582 725 596 585 616 C 542 622 515 616 502 624 C 482 648 486 676 530 706 L 985 740 Z" fill="#54973e" />
+
+      <!-- Left Main Green Rolling Hill -->
+      <path d="M 15 568 C 145 594 295 626 462 644 C 412 672 404 694 442 718 C 482 744 495 768 445 815 C 390 870 385 935 445 985 L 15 985 Z" fill="#66a442" />
+      <!-- Left Hill Subtle Sunlit Crest Highlight -->
+      <path d="M 28 606 C 145 628 275 652 405 668 C 386 692 396 716 428 738 C 305 734 155 748 28 784 Z" fill="#73b04b" />
+
+      <!-- Right Main Green Rolling Hill -->
+      <path d="M 985 578 C 865 592 750 610 635 630 C 562 642 522 634 498 640 C 472 662 478 688 525 715 C 580 748 585 785 535 840 C 495 885 535 940 645 985 L 985 985 Z" fill="#66a442" />
+      <!-- Right Hill Subtle Sunlit Crest Highlight -->
+      <path d="M 972 612 C 860 622 735 636 605 654 C 572 658 548 666 544 684 C 665 676 825 678 972 696 Z" fill="#73b04b" />
+
+      <!-- Midground Pine Trees (Layered in deep #12783e, mid #1f8242 & sunlit #64a13f for clear depth) -->
+      <!-- Left Cluster -->
+      <polygon points="66,472 90,525 80,525 100,563 88,563 108,598 24,598 44,563 32,563 52,525 42,525" fill="#64a13f" />
+      <polygon points="202,492 228,547 218,547 239,586 226,586 248,622 156,622 178,586 165,586 186,547 176,547" fill="#1f8242" />
+
+      <!-- Left Foothill & Valley Bank Trees -->
+      <polygon points="282,562 302,598 294,598 311,624 301,624 318,648 246,648 263,624 253,624 270,598 262,598" fill="#64a13f" />
+      <polygon points="328,552 346,588 339,588 354,614 345,614 361,638 295,638 311,614 302,614 317,588 310,588" fill="#12783e" />
+      <polygon points="384,558 402,593 395,593 410,618 401,618 416,646 352,646 367,618 358,618 373,593 366,593" fill="#1f8242" />
+      <polygon points="434,572 449,601 443,601 456,622 448,622 460,646 408,646 420,622 412,622 425,601 419,601" fill="#12783e" />
+
+      <!-- Right Foothill & Valley Bank Trees -->
+      <polygon points="546,568 561,597 555,597 568,618 560,618 572,645 520,645 532,618 524,618 537,597 531,597" fill="#12783e" />
+      <polygon points="604,576 622,608 615,608 630,631 621,631 636,652 572,652 587,631 578,631 593,608 586,608" fill="#1f8242" />
+      <polygon points="705,532 725,568 717,568 733,594 723,594 740,618 670,618 687,594 677,594 693,568 685,568" fill="#1f8242" />
+    </g>
+    <!-- 7. Winding River & White Roads -->
+    <g id="river-and-roads">
+      <!-- Left & Right White Roads -->
+      <path d="M 125 832 C 245 786 375 765 505 756" fill="none" stroke="#ffffff" stroke-width="32" stroke-linecap="round" />
+      <path d="M 555 756 L 915 754" fill="none" stroke="#ffffff" stroke-width="32" stroke-linecap="round" />
+      <!-- Winding River White Banks (Emerges smoothly from the mountain pass & widens down the valley) -->
+      <path d="M 516 606 C 488 618 462 634 438 652 C 402 678 402 694 436 714 C 474 738 494 764 436 812 C 362 874 366 932 422 982 L 664 982 C 546 944 486 894 534 836 C 584 776 574 736 516 704 C 482 684 480 668 504 644 C 514 632 522 618 522 606 Z" fill="#ffffff" />
+      <!-- Winding River Light Blue Water -->
+      <path d="M 516 606 C 494 618 472 634 452 652 C 422 676 426 692 456 710 C 494 734 514 764 456 814 C 386 876 392 932 448 982 L 642 982 C 524 942 466 892 514 834 C 564 774 554 738 498 706 C 464 686 466 668 492 644 C 504 632 514 618 518 606 Z" fill="#83d2f2" />
+      <!-- Subtle Flowing Water Current Highlights -->
+      <g clip-path="url(#river-water-clip)" fill="none" stroke-linecap="round">
+        <path d="M 508 620 C 482 638 456 658 454 678 C 452 696 482 714 504 736" stroke="#ffffff" stroke-width="4" opacity="0.85" />
+        <path d="M 516 746 C 534 772 522 802 492 832 C 456 868 454 908 502 946" stroke="#ffffff" stroke-width="5" opacity="0.8" />
+        <path d="M 484 794 C 454 824 426 858 424 894 C 422 924 442 952 474 976" stroke="#c7eeff" stroke-width="4.5" opacity="0.85" />
+      </g>
+    </g>
+    <!-- 8. Foreground Pine Trees -->
+    <g id="foreground-trees">
+      <polygon points="298,828 320,877 312,877 330,912 319,912 338,945 258,945 277,912 266,912 284,877 276,877" fill="#12783e" />
+      <polygon points="698,810 722,867 712,867 732,907 720,907 740,945 656,945 676,907 664,907 684,867 674,867" fill="#12783e" />
+      <polygon points="765,805 786,852 778,852 795,886 784,886 802,918 728,918 746,886 735,886 752,852 744,852" fill="#12783e" />
+    </g>
+    <!-- 9. Orange Off-Road SUV / Jeep (Left) -->
+    <g id="jeep" transform="translate(262, 738) rotate(-13)">
+      <!-- Rear Chunky Spare Tire & Tread Lugs -->
+      <g fill="#10385b">
+        <rect x="-115" y="-33" width="21" height="50" rx="8" />
+        <rect x="-118" y="-26" width="5" height="5" rx="1.5" />
+        <rect x="-118" y="-15" width="5" height="5" rx="1.5" />
+        <rect x="-118" y="-4" width="5" height="5" rx="1.5" />
+        <rect x="-118" y="7" width="5" height="5" rx="1.5" />
+      </g>
+      <!-- Roof Rack & Off-Road Light Pod -->
+      <path d="M -82 -56 L -77 -63 L 1 -63 L 5 -56" fill="none" stroke="#10385b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+      <line x1="-54" y1="-63" x2="-54" y2="-56" stroke="#10385b" stroke-width="4.5" />
+      <line x1="-22" y1="-63" x2="-22" y2="-56" stroke="#10385b" stroke-width="4.5" />
+      <!-- Off-Road Spotlight above Windshield -->
+      <rect x="8" y="-62" width="11" height="9" rx="3" fill="#10385b" />
+      <rect x="16" y="-60" width="4" height="5" rx="1.5" fill="#f89b14" />
+
+      <!-- Main Lifted 4x4 Jeep Body -->
+      <path d="M -94 -46 Q -94 -55 -84 -55 L 6 -55 Q 13 -55 17 -48 L 31 -21 L 88 -21 Q 96 -21 97 -12 L 99 14 Q 99 21 91 21 L -86 21 Q -94 21 -94 13 Z" fill="#f28c4b" stroke="#10385b" stroke-width="9" stroke-linejoin="round" />
+
+      <!-- Lower Rocker Shading & White Retro Off-Road Stripe -->
+      <path d="M -89 8 L 93 8 L 93 15 Q 93 16 90 16 L -86 16 Q -89 16 -89 14 Z" fill="#d97030" />
+      <polygon points="-89,-14 86,-14 91,-8 -89,-8" fill="#ffffff" />
+
+      <!-- Door Cutlines, Handles, Hood Vent & Side Mirror -->
+      <line x1="-35" y1="-17" x2="-35" y2="16" stroke="#10385b" stroke-width="3.5" stroke-linecap="round" />
+      <line x1="23" y1="-17" x2="23" y2="16" stroke="#10385b" stroke-width="3.5" stroke-linecap="round" />
+      <rect x="-46" y="-4" width="8" height="3.5" rx="1.5" fill="#10385b" />
+      <rect x="11" y="-4" width="8" height="3.5" rx="1.5" fill="#10385b" />
+      <rect x="42" y="-17" width="14" height="3.5" rx="1.5" fill="#10385b" />
+      <!-- Side-View Mirror -->
+      <rect x="20" y="-26" width="9" height="7" rx="2.5" fill="#10385b" />
+      <!-- Front Headlight Lens -->
+      <rect x="92" y="-15" width="7" height="10" rx="3" fill="#ffffff" stroke="#10385b" stroke-width="3" />
+
+      <!-- Tinted Windows with Glossy Reflection Streaks -->
+      <rect x="-80" y="-44" width="38" height="24" rx="4" fill="#10385b" />
+      <path d="M -32 -44 L 5 -44 L 19 -19 L -32 -19 Z" fill="#10385b" stroke="#10385b" stroke-width="3" stroke-linejoin="round" />
+      <line x1="-70" y1="-25" x2="-58" y2="-39" stroke="#faf9f5" stroke-width="2.5" stroke-linecap="round" opacity="0.85" />
+      <line x1="-18" y1="-24" x2="-4" y2="-40" stroke="#faf9f5" stroke-width="2.5" stroke-linecap="round" opacity="0.85" />
+      <line x1="-9" y1="-24" x2="2" y2="-37" stroke="#faf9f5" stroke-width="2" stroke-linecap="round" opacity="0.7" />
+
+      <!-- Heavy-Duty Rear Bumper, Rock Slider, Fender Flares & Front Bull-Bar Bumper -->
+      <!-- Rear Bumper -->
+      <rect x="-102" y="14" width="15" height="11" rx="3" fill="#10385b" />
+      <!-- Rear Trapezoidal Fender Flare -->
+      <path d="M -90 23 L -80 3 L -36 3 L -26 23 L -34 25 L -41 10 L -75 10 L -82 25 Z" fill="#10385b" stroke="#10385b" stroke-width="3" stroke-linejoin="round" />
+      <!-- Side Rock Slider Step Bar -->
+      <rect x="-27" y="20" width="54" height="6" rx="3" fill="#10385b" />
+      <!-- Front Trapezoidal Fender Flare -->
+      <path d="M 26 23 L 36 3 L 80 3 L 90 23 L 82 25 L 75 10 L 41 10 L 34 25 Z" fill="#10385b" stroke="#10385b" stroke-width="3" stroke-linejoin="round" />
+      <!-- Front Winch Bumper & Tubular Bull Bar -->
+      <path d="M 94 14 L 104 -2 L 112 14" fill="none" stroke="#10385b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+      <rect x="86" y="12" width="29" height="13" rx="4" fill="#10385b" />
+      <circle cx="107" cy="18.5" r="2.2" fill="#f28c4b" />
+
+      <!-- Lifted Chunky Off-Road Wheels -->
+      <!-- Rear Wheel -->
+      <g transform="translate(-58, 32)">
+        <g fill="#10385b">
+          <rect x="-3" y="-28.5" width="6" height="5" rx="1.5" />
+          <rect x="-3" y="23.5" width="6" height="5" rx="1.5" />
+          <rect x="-28.5" y="-3" width="5" height="6" rx="1.5" />
+          <rect x="23.5" y="-3" width="5" height="6" rx="1.5" />
+          <rect x="-3" y="-28.5" width="6" height="5" rx="1.5" transform="rotate(45)" />
+          <rect x="-3" y="23.5" width="6" height="5" rx="1.5" transform="rotate(45)" />
+          <rect x="-28.5" y="-3" width="5" height="6" rx="1.5" transform="rotate(45)" />
+          <rect x="23.5" y="-3" width="5" height="6" rx="1.5" transform="rotate(45)" />
+        </g>
+        <circle cx="0" cy="0" r="25.5" fill="#10385b" />
+        <circle cx="0" cy="0" r="11.5" fill="#ffffff" />
+        <circle cx="0" cy="0" r="4.5" fill="#10385b" />
+      </g>
+      <!-- Front Wheel -->
+      <g transform="translate(58, 32)">
+        <g fill="#10385b">
+          <rect x="-3" y="-28.5" width="6" height="5" rx="1.5" />
+          <rect x="-3" y="23.5" width="6" height="5" rx="1.5" />
+          <rect x="-28.5" y="-3" width="5" height="6" rx="1.5" />
+          <rect x="23.5" y="-3" width="5" height="6" rx="1.5" />
+          <rect x="-3" y="-28.5" width="6" height="5" rx="1.5" transform="rotate(45)" />
+          <rect x="-3" y="23.5" width="6" height="5" rx="1.5" transform="rotate(45)" />
+          <rect x="-28.5" y="-3" width="5" height="6" rx="1.5" transform="rotate(45)" />
+          <rect x="23.5" y="-3" width="5" height="6" rx="1.5" transform="rotate(45)" />
+        </g>
+        <circle cx="0" cy="0" r="25.5" fill="#10385b" />
+        <circle cx="0" cy="0" r="11.5" fill="#ffffff" />
+        <circle cx="0" cy="0" r="4.5" fill="#10385b" />
+      </g>
+    </g>
+    <!-- 10. Blue Tour Bus (Right) -->
+    <g id="tour-bus" transform="translate(775, 692)">
+      <!-- Bus Main Body -->
+      <path d="M -100 -50 L 102 -50 C 114 -50 120 -42 120 -28 L 120 32 C 120 40 114 45 106 45 L -104 45 C -114 45 -120 38 -120 26 L -120 -18 C -120 -38 -112 -50 -100 -50 Z" fill="#1680be" stroke="#10385b" stroke-width="8" stroke-linejoin="round" />
+      <!-- Lower Dark Navy Skirt -->
+      <path d="M -118 22 L 118 22 L 118 34 C 118 41 113 45 106 45 L -104 45 C -113 45 -118 40 -118 32 Z" fill="#10385b" />
+      <!-- Front Panoramic Windshield -->
+      <path d="M -102 -38 L -74 -38 L -74 10 L -110 10 C -112 -14 -108 -30 -102 -38 Z" fill="#faf9f5" stroke="#10385b" stroke-width="5" stroke-linejoin="round" />
+      <!-- Side Passenger Windows -->
+      <g fill="#faf9f5" stroke="#10385b" stroke-width="5" stroke-linejoin="round">
+        <rect x="-62" y="-38" width="34" height="30" rx="3" />
+        <rect x="-18" y="-38" width="34" height="30" rx="3" />
+        <rect x="26" y="-38" width="34" height="30" rx="3" />
+        <rect x="70" y="-38" width="34" height="30" rx="3" />
+      </g>
+      <!-- Wheels -->
+      <circle cx="-62" cy="46" r="21" fill="#10385b" />
+      <circle cx="-62" cy="46" r="8" fill="#ffffff" />
+      <circle cx="66" cy="46" r="21" fill="#10385b" />
+      <circle cx="66" cy="46" r="8" fill="#ffffff" />
+    </g>
+    <!-- 11. Cheerful Person with Beer Mug & Hungarian Flag -->
+    <g id="character-and-flag" transform="translate(-26, 16)">
+      <!-- Person Silhouette -->
+      <g fill="#10385b">
+        <!-- Head & Hair Tuft -->
+        <path d="M 822 465 C 820 457 826 452 835 455 C 844 458 854 456 858 463 C 861 470 860 482 854 489 C 847 496 833 496 826 488 C 821 482 821 472 822 465 Z" />
+        <!-- Smile -->
+        <path d="M 831 478 C 836 484 846 484 851 478 Z" fill="#ffffff" />
+        <!-- Torso, Arms & Legs -->
+        <path d="M 825 498 L 855 498 C 865 504 875 518 878 538 C 879 544 871 546 869 540 C 866 528 861 518 856 513 L 856 587 L 861 587 C 865 587 865 594 861 594 L 844 594 L 841 552 L 838 552 L 835 594 L 818 594 C 814 594 814 587 818 587 L 823 587 L 823 512 C 808 511 795 504 786 492 C 783 487 790 482 794 487 C 802 496 812 500 825 498 Z" />
+      </g>
+      <!-- Frothy Beer Mug -->
+      <g id="beer-mug">
+        <!-- Mug Handle -->
+        <path d="M 782 472 L 791 472 C 795 472 797 475 797 479 L 797 492 C 797 496 795 499 791 499 L 782 499" fill="none" stroke="#10385b" stroke-width="5" stroke-linejoin="round" />
+        <!-- Amber Beer Body -->
+        <rect x="756" y="466" width="26" height="38" rx="4" fill="#f5a01d" stroke="#10385b" stroke-width="5" />
+        <!-- White Beer Foam -->
+        <path d="M 753 468 C 751 460 758 455 765 458 C 770 454 778 455 782 460 C 786 463 785 469 781 471 L 762 471 L 762 482 C 762 486 756 486 756 481 L 756 471 C 754 471 753 470 753 468 Z" fill="#ffffff" stroke="#10385b" stroke-width="4" stroke-linejoin="round" />
+      </g>
+    </g>
+  </g>
+  <!-- Outer Circular Navy Frame -->
+  <circle cx="500" cy="500" r="482" fill="none" stroke="#10385b" stroke-width="26" />
+  <!-- Flags Area on taller flagpole for Hungary, Székely & Bulgaria -->
+  <g id="flag-complex">
+    <!-- Taller Flagpole & Finial -->
+    <line x1="874" y1="308" x2="874" y2="594" stroke="#10385b" stroke-width="8" stroke-linecap="round" />
+    <circle cx="874" cy="302" r="7" fill="#10385b" />
+    <!-- 1. Hungarian Flag (Top, Y=316 to 367) -->
+    <g id="hungarian-flag">
+      <g stroke="#10385b" stroke-width="4" stroke-linejoin="round">
+        <path d="M 876 316 C 904 310 934 326 962 320 L 962 337 C 934 343 904 327 876 333 Z" fill="#ce2939" />
+        <path d="M 876 333 C 904 327 934 343 962 337 L 962 354 C 934 360 904 344 876 350 Z" fill="#ffffff" />
+        <path d="M 876 350 C 904 344 934 360 962 354 L 962 371 C 934 377 904 361 876 367 Z" fill="#137a3e" />
+      </g>
+      <path fill="none" stroke="#10385b" stroke-width="5" stroke-linejoin="round" d="M 876 316 C 904 310 934 326 962 320 L 962 371 C 934 377 904 361 876 367 Z" />
+    </g>
+    <!-- 2. Székely Flag (Middle, Y=382 to 433) -->
+    <g id="szekely-flag">
+      <!-- Blue Base -->
+      <path d="M 876 382 C 904 376 934 392 962 386 L 962 437 C 934 443 904 427 876 433 Z" fill="#00aef0" />
+      <!-- Gold Center Stripe -->
+      <path d="M 876 402 C 904 396 934 412 962 406 L 962 417 C 934 423 904 407 876 413 Z" fill="#fad748" stroke="#10385b" stroke-width="2.5" stroke-linejoin="round" />
+      <!-- Gold 8-Pointed Sun/Star -->
+      <polygon points="892,384.8 893.15,389.23 897.09,386.91 894.77,390.85 899.2,392 894.77,393.15 897.09,397.09 893.15,394.77 892,399.2 890.85,394.77 886.91,397.09 889.23,393.15 884.8,392 889.23,390.85 886.91,386.91 890.85,389.23" fill="#fad748" />
+      <!-- White Crescent Moon -->
+      <path d="M 901 384.5 C 912.5 385 912.5 399 901 399.5 C 908 396 908 388 901 384.5 Z" fill="#ffffff" />
+      <!-- Flag Outer Border -->
+      <path fill="none" stroke="#10385b" stroke-width="5" stroke-linejoin="round" d="M 876 382 C 904 376 934 392 962 386 L 962 437 C 934 443 904 427 876 433 Z" />
+    </g>
+    <!-- 3. Bulgarian Flag (Bottom, Y=448 to 499) -->
+    <g id="bulgarian-flag">
+      <g stroke="#10385b" stroke-width="4" stroke-linejoin="round">
+        <path d="M 876 448 C 904 442 934 458 962 452 L 962 469 C 934 475 904 459 876 465 Z" fill="#ffffff" />
+        <path d="M 876 465 C 904 459 934 475 962 469 L 962 486 C 934 492 904 476 876 482 Z" fill="#00966e" />
+        <path d="M 876 482 C 904 476 934 492 962 486 L 962 503 C 934 509 904 493 876 499 Z" fill="#d62612" />
+      </g>
+      <path fill="none" stroke="#10385b" stroke-width="5" stroke-linejoin="round" d="M 876 448 C 904 442 934 458 962 452 L 962 503 C 934 509 904 493 876 499 Z" />
+    </g>
+  </g>
+</svg>
